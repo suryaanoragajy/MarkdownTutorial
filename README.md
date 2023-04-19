@@ -7,7 +7,7 @@
 **MARKDOWN** adalah format penulisan teks yang digunakan untuk menulis dokumen yang dapat dengan mudah diubah menjadi format lain seperti HTML, PDF, atau *Rich Text Format* (RTF). Format ini dirancang untuk memudahkan penulis dalam membuat dokumen dengan cara yang sederhana, intuitif, dan mudah dibaca. Markdown juga digunakan dalam file README untuk memberikan informasi tentang suatu *repository*, memberikan penjelasan code pada Jupyter Notebook dan lain sebagainya. Berikut ini akan dijelaskan mengenai beberapa hal yang dapat dilakukan pada file markdown.
 <hr>
 
-## **Heading**
+## **1. Heading**
 Heading digunakan untuk membuat *section* atau bab yang berfungsi untuk memisahkan konten satu dan lainnya. Heading dibuat dengan awalan **'#'**. Terdapat 6 tingkatan pada heading dimana semakin banyak **'#'** maka ukuran heading akan semakin kecil.
 
 ```
@@ -33,7 +33,7 @@ Output :
 Pada VS Code, penggunaan tingkatan heading ini akan terlihat pada bagian outline. Biasanya heading 1 untuk judul, heading 2 untuk bab, heading 3 untuk subbab dan seterusnya sehingga penggunaan heading ini membuat dokumen menjadi lebih terstruktur.
 <hr>
 
-## **Font Style**
+## **2. Font Style**
 Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, ***bold dan italic***, `monospace`, dan ~~strikethrough~~.
 
 1. **Bold**  
@@ -68,5 +68,18 @@ Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, **
    Output:  
    ***Tulisan ini di-bold dan italic***
 
-4. `Monospace`
-5. ~~Strikethrough~~
+4. `Monospace`  
+   Monospace digunakan untuk meng-highlight suatu tulisan. Untuk melakukan monospace, tambahkan backtick (`) di awal dan akhir tulisan
+   ```
+   `Tulisan ini di-monospace`
+   ```
+   Output:  
+   `Tulisan ini di-monospace`
+
+5. ~~Strikethrough~~  
+    Strikethrough digunakan untuk mencoret suatu tulisan. Untuk melakukan strikethrough, tambahkan dua tilde (~) di awal dan akhir tulisan
+   ```
+   ~~Tulisan ini di-strikethrough~~
+   ```
+   Output:  
+   ~~Tulisan ini di-strikethrough~~
