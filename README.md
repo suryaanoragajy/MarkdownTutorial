@@ -4,10 +4,7 @@
   <img src="https://www.nicepng.com/png/detail/187-1870373_44191585-markdown-logo.png" style="display: block; margin: auto;" width="200"/>
 </p>
 
-<p align="justify">
-
 **MARKDOWN** adalah format penulisan teks yang digunakan untuk menulis dokumen yang dapat dengan mudah diubah menjadi format lain seperti HTML, PDF, atau *Rich Text Format* (RTF). Format ini dirancang untuk memudahkan penulis dalam membuat dokumen dengan cara yang sederhana, intuitif, dan mudah dibaca. Markdown juga digunakan dalam file README untuk memberikan informasi tentang suatu *repository*, memberikan penjelasan code pada Jupyter Notebook dan lain sebagainya. Berikut ini akan dijelaskan mengenai beberapa hal yang dapat dilakukan pada file markdown.
-</p>
 
 <hr>
 
@@ -38,7 +35,7 @@ Pada VS Code, penggunaan tingkatan heading ini akan terlihat pada bagian outline
 <hr>
 
 ## **2. Font Style**
-Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, ***bold dan italic***, `monospace`, dan ~~strikethrough~~.
+Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, ***bold dan italic***, `inline code`, dan ~~strikethrough~~.
 
 1. **Bold**  
    Untuk membuat tulisan menjadi tebal, tambahkan dua asterisk (**) atau dua underscore(__) di awal dan akhir tulisan yang akan di-bold
@@ -123,9 +120,9 @@ Untuk membuat teks menjadi rata kiri, tengah, kanan dan justify, dapat menggunak
    Output:
    <p align="justify">This text is justified. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula. Maecenas congue, magna sit amet suscipit tincidunt</p>
 
-   ---
+---
 
-## **4. Highlight & Font Color**
+## **4. Highlight, Font Color and Change Font**
 Untuk membuat highlight dan mengganti warna teks dapat menggunakan format HTML.  
    1. Highlight  
       Untuk menandai suatu teks. Biasanya memiliki background kuning.
@@ -136,13 +133,13 @@ Untuk membuat highlight dan mengganti warna teks dapat menggunakan format HTML.
       <mark>This text is highlighted</mark>
 
    2. Font Color
-      Untuk mengganti warna teks dilakukan dengan
+      Untuk mengganti warna teks gunakan
       ```
       <font color="red">This text is red</font>  
       ```
       Output:  
       <font color="red">This text is red</font>  
-      Terdapat banyak pilihan warna, misalkan `"red"`,`"green"`,`"blue"`,`"cyan"`,`"magenta"`,`"yellow"`,`"black"`,`"white"`,`"lightgreen"`,`"lightblue"`, dan lainnya  
+      Terdapat banyak pilihan warna, misalkan "red","green","blue","cyan","magenta","yellow","black","white","lightgreen","lightblue", dan lainnya  
 
       Warna teks juga dapat diubah menggunakan *six-digit hex color*. Contohnya
       ```
@@ -150,7 +147,93 @@ Untuk membuat highlight dan mengganti warna teks dapat menggunakan format HTML.
       ```
       Output:  
       <span style="color:#33FFCE;">Your text here</span>
-
+   
+   3. Change Font  
+      Untuk mengganti jenis font gunakan
+      ```
+      <span style="font-family:Times New Roman"> Font Tulisan dalam Times New Roman </span>
+      ```
+      Output:  
+      <span style="font-family:Times New Roman"> Font Tulisan dalam Times New Roman </span>
+---
 ## **5. Lists**
-   Berikut ini cara menggunakan numbered, bulleted, nested, to-do, definition, task, mixed lists.  
-   1. 
+Berikut ini cara menggunakan numbered, bulleted, nested, to-do, dan mixed list.  
+1. Numbered List
+   ```
+      1. First item
+      2. Second item
+      3. Third item
+   ```
+   Output:  
+      1. First item  
+      2. Second item  
+      3. Third item
+   
+2. Bulleted List
+   ```
+      - First item
+      - Second item
+      - Third item
+   ```
+   Output:  
+   - First item
+   - Second item  
+   - Third item
+  
+3. Nested List  
+   ```
+   - First item
+     - Sub-item 1
+     - Sub-item 2
+   - Second item
+     - Sub-item 1
+     - Sub-item 2
+   ```
+   Output:  
+   - First item
+     - Sub-item 1
+     - Sub-item 2
+   - Second item
+     - Sub-item 1
+     - Sub-item 2
+ 
+ 4. To-Do List  
+    ```
+      - [x] Completed task
+      - [ ] Incomplete task
+      - [ ] Another incomplete task
+    ```
+      Output:  
+      - [x] Completed task
+      - [ ] Incomplete task
+      - [ ] Another incomplete task
+
+
+5. Mixed List  
+   ```
+   1. First item
+      - Sub-item 1
+      - Sub-item 2
+   2. Second item
+      1. Sub-item 1
+      2. Sub-item 2
+         - Sub-sub-item 1
+         - Sub-sub-item 2
+   3. Third item  
+      - [x] Completed task
+      - [ ] Incomplete task
+      - [ ] Another incomplete task
+   ```
+   Output:   
+   1. First item
+      - Sub-item 1
+      - Sub-item 2
+   2. Second item
+      1. Sub-item 1
+      2. Sub-item 2
+         - Sub-sub-item 1
+         - Sub-sub-item 2
+   3. Third item  
+      - [x] Completed task
+      - [ ] Incomplete task
+      - [ ] Another incomplete task   
