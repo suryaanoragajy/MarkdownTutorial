@@ -4,7 +4,11 @@
   <img src="https://www.nicepng.com/png/detail/187-1870373_44191585-markdown-logo.png" style="display: block; margin: auto;" width="200"/>
 </p>
 
+<p align="justify">
+
 **MARKDOWN** adalah format penulisan teks yang digunakan untuk menulis dokumen yang dapat dengan mudah diubah menjadi format lain seperti HTML, PDF, atau *Rich Text Format* (RTF). Format ini dirancang untuk memudahkan penulis dalam membuat dokumen dengan cara yang sederhana, intuitif, dan mudah dibaca. Markdown juga digunakan dalam file README untuk memberikan informasi tentang suatu *repository*, memberikan penjelasan code pada Jupyter Notebook dan lain sebagainya. Berikut ini akan dijelaskan mengenai beberapa hal yang dapat dilakukan pada file markdown.
+</p>
+
 <hr>
 
 ## **1. Heading**
@@ -39,64 +43,114 @@ Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, **
 1. **Bold**  
    Untuk membuat tulisan menjadi tebal, tambahkan dua asterisk (**) atau dua underscore(__) di awal dan akhir tulisan yang akan di-bold
    ```
-   **Tulisan ini di-bold**
-   __Tulisan ini di-bold__
+   **This is bold text**
+   __This is bold text__
    ```  
    Cara lain, di VS Code, blok tulisan yang akan di-bold kemudian tekan `ctrl+B`
 
    Output:  
-   **Tulisan ini di-bold**
+   **This is bold text**
   
 2. *Italic*  
    Untuk membuat tulisan menjadi miring, tambahkan satu asterisk (*) atau satu underscore (_) di awal dan akhir tulisan yang akan di-italic
    ```
-   *Tulisan ini di-italic*
-   _Tulisan ini di-italic_
+   *This is italic text*
+   _This is italic text_
    ```
    Cara lain, di VS Code, blok tulisan yang akan di-italic kemudian tekan `ctrl+I`
 
    Output:  
-   *Tulisan ini di-italic*  
+   *This is italic text*  
 
    
 3. ***Bold dan italic***  
       Untuk membuat tulisan menjadi tebal dan miring, lakukan cara yang sama seperti poin 1 dan 2 di atas dengan urutan *italic* terlebih dahulu kemudian **bold**.
    ```
-   ***Tulisan ini di-italic***
-   ___Tulisan ini di-italic___
+   ***This is bold & italic text***
+   ___This is bold & italic text___
    ```
    Output:  
-   ***Tulisan ini di-bold dan italic***
+   ***This is bold & italic text***
 
-4. `Monospace`  
-   Monospace digunakan untuk meng-highlight suatu tulisan. Untuk melakukan monospace, tambahkan backtick (`) di awal dan akhir tulisan
+4. `Inline code`  
+   Inline code digunakan untuk menampilkan code dalam suatu kalimat. Untuk melakukan inline, tambahkan backtick (`) di awal dan akhir tulisan
    ```
-   `Tulisan ini di-monospace`
+   This is regular text `and this is inline code`
    ```
    Output:  
-   `Tulisan ini di-monospace`
+   This is regular text `and this is inline code`
 
 5. ~~Strikethrough~~  
     Strikethrough digunakan untuk mencoret suatu tulisan. Untuk melakukan strikethrough, tambahkan dua tilde (~) di awal dan akhir tulisan
    ```
-   ~~Tulisan ini di-strikethrough~~
+   ~~This is strikethrough text~~
    ```
    Output:  
-   ~~Tulisan ini di-strikethrough~~
+   ~~This is strikethrough text~~
 
 ---
-## 3. Align Text
+## **3. Text Alignment**
 Untuk membuat teks menjadi rata kiri, tengah, kanan dan justify, dapat menggunakan format HTML.  
-This is regular text `and this is inline code`
-1. Align Left  
-   Align left dapat menggunakan
+1. Left Align   
+   Untuk membuat teks menjadi rata kiri dapat menggunakan
    ```
    <p align="left">This text is aligned to the left.</p>
    ```
-<p align="left">This text is aligned to the left.</p>
+   Output:  
+    <p align="left">This text is aligned to the left.</p>
 
-<p align="center">This text is centered.</p>
+2. Center Align  
+   Untuk membuat teks menjadi rata tengah dapat menggunakan
+   ```
+   <p align="center">This text is centered.</p>
+   ```
+   Output:
+   <p align="center">This text is centered.</p>
 
-<p align="right">This text is aligned to the right.</p>
+3. Right align  
+   Untuk membuat teks menjadi rata kanan dapat menggunakan
+   ```
+   <p align="right">This text is aligned to the right.</p>
+   ```
+   Output:  
+   <p align="right">This text is aligned to the right.</p>
 
-<p align="justify">This text is justified. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula. Maecenas congue, magna sit amet suscipit tincidunt
+4. Justify  
+   Untuk membuat teks menjadi rata kanan kiri dapat menggunakan
+   ```
+   <p align="justify">This text is justified. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula. Maecenas congue, magna sit amet suscipit tincidunt
+   ```
+   Output:
+   <p align="justify">This text is justified. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula. Maecenas congue, magna sit amet suscipit tincidunt</p>
+
+   ---
+
+## **4. Highlight & Font Color**
+Untuk membuat highlight dan mengganti warna teks dapat menggunakan format HTML.  
+   1. Highlight  
+      Untuk menandai suatu teks. Biasanya memiliki background kuning.
+      ```
+      <mark>This text is highlighted</mark>
+      ```
+      Output:  
+      <mark>This text is highlighted</mark>
+
+   2. Font Color
+      Untuk mengganti warna teks dilakukan dengan
+      ```
+      <font color="red">This text is red</font>  
+      ```
+      Output:  
+      <font color="red">This text is red</font>  
+      Terdapat banyak pilihan warna, misalkan `"red"`,`"green"`,`"blue"`,`"cyan"`,`"magenta"`,`"yellow"`,`"black"`,`"white"`,`"lightgreen"`,`"lightblue"`, dan lainnya  
+
+      Warna teks juga dapat diubah menggunakan *six-digit hex color*. Contohnya
+      ```
+      <span style="color:#33FFCE;">Your text here</span>
+      ```
+      Output:  
+      <span style="color:#33FFCE;">Your text here</span>
+
+## **5. Lists**
+   Berikut ini cara menggunakan numbered, bulleted, nested, to-do, definition, task, mixed lists.  
+   1. 
