@@ -37,7 +37,7 @@ Pada VS Code, penggunaan tingkatan heading ini akan terlihat pada bagian outline
 Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, ***bold dan italic***, `monospace`, dan ~~strikethrough~~.
 
 1. **Bold**  
-   Untuk membuat tulisan menjadi bold, tambahkan dua asterisk (**) atau dua underscore(__) di awal dan akhir tulisan yang akan di-bold
+   Untuk membuat tulisan menjadi tebal, tambahkan dua asterisk (**) atau dua underscore(__) di awal dan akhir tulisan yang akan di-bold
    ```
    **Tulisan ini di-bold**
    __Tulisan ini di-bold__
@@ -48,7 +48,7 @@ Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, **
    **Tulisan ini di-bold**
   
 2. *Italic*  
-   Untuk membuat tulisan menjadi *italic*, tambahkan satu asterisk (*) atau satu underscore (_) di awal dan akhir tulisan yang akan di-italic
+   Untuk membuat tulisan menjadi miring, tambahkan satu asterisk (*) atau satu underscore (_) di awal dan akhir tulisan yang akan di-italic
    ```
    *Tulisan ini di-italic*
    _Tulisan ini di-italic_
@@ -60,7 +60,7 @@ Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, **
 
    
 3. ***Bold dan italic***  
-      Untuk membuat tulisan menjadi ***bold dan italic***, lakukan cara yang sama seperti poin 1 dan 2 di atas dengan urutan *italic* terlebih dahulu kemudian **bold**.
+      Untuk membuat tulisan menjadi tebal dan miring, lakukan cara yang sama seperti poin 1 dan 2 di atas dengan urutan *italic* terlebih dahulu kemudian **bold**.
    ```
    ***Tulisan ini di-italic***
    ___Tulisan ini di-italic___
