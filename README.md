@@ -83,3 +83,20 @@ Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, **
    ```
    Output:  
    ~~Tulisan ini di-strikethrough~~
+
+---
+## 3. Align Text
+Untuk membuat teks menjadi rata kiri, tengah, kanan dan justify, dapat menggunakan format HTML.  
+This is regular text `and this is inline code`
+1. Align Left  
+   Align left dapat menggunakan
+   ```
+   <p align="left">This text is aligned to the left.</p>
+   ```
+<p align="left">This text is aligned to the left.</p>
+
+<p align="center">This text is centered.</p>
+
+<p align="right">This text is aligned to the right.</p>
+
+<p align="justify">This text is justified. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula. Maecenas congue, magna sit amet suscipit tincidunt
