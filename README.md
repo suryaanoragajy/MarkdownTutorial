@@ -280,7 +280,6 @@ Untuk menambahkan sebuah foto lakukan
 ```
 ![alt text](image_file_path "title")
 ```
-Here, alt text is the alternative text for the image, which is displayed if the image is not loaded or cannot be displayed. image_file_path is the file path or URL of the image. You can also provide an optional title for the image, which is displayed when the mouse pointer is over the image.
 `alt text` (alternative text) adalah teks yang akan muncul jika gambar tidak dapat ditampilkan. `image_file_path` adalah path atau URL dari foto. `"title"` adalah judul dari gambar yang akan muncul ketika kursor berada di gambar. Selain itu juga dapat dituliskan dalam format HTML
 ```
 <p><img src="URL"/></p>
