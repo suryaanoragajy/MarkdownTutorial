@@ -1,15 +1,15 @@
-# Markdown Tutorial 
+# Tutorial Markdown
 
 <p align="center">
   <img src="https://www.nicepng.com/png/detail/187-1870373_44191585-markdown-logo.png" style="display: block; margin: auto;" width="200"/>
 </p>
 
-**MARKDOWN** is a text writing format used for writing documents that can be easily converted into other formats such as HTML, PDF, or *Rich Text Format* (RTF). It is designed to make it easier for authors to create documents in a simple, intuitive, and readable way. Markdown is also used in README files to provide information about a *repository*, provide code explanations on Jupyter Notebook and so on. The following will explain some of the things that can be done in markdown files.
+**MARKDOWN** adalah format penulisan teks yang digunakan untuk menulis dokumen yang dapat dengan mudah diubah menjadi format lain seperti HTML, PDF, atau *Rich Text Format* (RTF). Format ini dirancang untuk memudahkan penulis dalam membuat dokumen dengan cara yang sederhana, intuitif, dan mudah dibaca. Markdown juga digunakan dalam file README untuk memberikan informasi tentang suatu *repository*, memberikan penjelasan code pada Jupyter Notebook dan lain sebagainya. Berikut ini akan dijelaskan mengenai beberapa hal yang dapat dilakukan pada file markdown.
 
 <hr>
 
 ## **1. Heading**
-Heading is used to create *sections* or chapters that serve to separate content from one another. Heading is created with the prefix **'#'**. There are 6 levels in the heading where the more **'#'** the smaller the heading size will be.
+Heading digunakan untuk membuat *section* atau bab yang berfungsi untuk memisahkan konten satu dan lainnya. Heading dibuat dengan awalan **'#'**. Terdapat 6 tingkatan pada heading dimana semakin banyak **'#'** maka ukuran heading akan semakin kecil.
 
 ```
 # Heading 1
@@ -19,7 +19,7 @@ Heading is used to create *sections* or chapters that serve to separate content 
 ##### Heading 5
 ###### Heading 6
 ```
-or can also be written in HTML as follows
+atau juga dapat ditulis dalam HTML seperti berikut
 ```
 <h1>Heading 1</h1> 
 <h2>Heading 2</h2> 
@@ -31,37 +31,37 @@ or can also be written in HTML as follows
 Output :
 ><h1>Heading 1</h1> <h2>Heading 2</h2> <h3>Heading 3</h3> <h4>Heading 4</h4> <h5>Heading 5</h5> <h6>Heading 6</h6>  
 
-In VS Code, the use of this heading level will be seen in the outline section. Usually, heading 1 is for the title, heading 2 for the chapter, heading 3 for the subchapter and so on so that the use of this heading makes the document more structured.
+Pada VS Code, penggunaan tingkatan heading ini akan terlihat pada bagian outline. Biasanya heading 1 untuk judul, heading 2 untuk bab, heading 3 untuk subbab dan seterusnya sehingga penggunaan heading ini membuat dokumen menjadi lebih terstruktur.
 <hr>
 
 ## **2. Font Style**
-There are several font styles that can be used such as **bold**, *italic*, ***bold and italic*** and ~~strikethrough~~.
+Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, ***bold dan italic*** dan ~~strikethrough~~.
 
 1. **Bold**  
-   To make the text bold, add two asterisks (**) or two underscores (__) at the beginning and end of the text to be bolded
+   Untuk membuat tulisan menjadi tebal, tambahkan dua asterisk (**) atau dua underscore(__) di awal dan akhir tulisan yang akan di-bold
    ```
    **This is bold text**
    __This is bold text__
    ```  
-   Alternatively, in VS Code, block the text to be bolded and press `ctrl+B`.
+   Cara lain, di VS Code, blok tulisan yang akan di-bold kemudian tekan `ctrl+B`
 
    Output:  
    **This is bold text**
   
 2. *Italic*  
-   To italicize text, add an asterisk (*) or underscore (_) at the beginning and end of the text to be italicized.
+   Untuk membuat tulisan menjadi miring, tambahkan satu asterisk (*) atau satu underscore (_) di awal dan akhir tulisan yang akan di-italic
    ```
    *This is italic text*
    _This is italic text_
    ```
-   Alternatively, in VS Code, block the text to be italicized and press `ctrl+I`.
+   Cara lain, di VS Code, blok tulisan yang akan di-italic kemudian tekan `ctrl+I`
 
    Output:  
    *This is italic text*  
 
    
-3. ***Bold and italic***  
-      To make the text bold and italic, do the same method as point 1 and 2 above in the order of *italic* first then **bold**.
+3. ***Bold dan italic***  
+      Untuk membuat tulisan menjadi tebal dan miring, lakukan cara yang sama seperti poin 1 dan 2 di atas dengan urutan *italic* terlebih dahulu kemudian **bold**.
    ```
    ***This is bold & italic text***
    ___This is bold & italic text___
@@ -70,7 +70,7 @@ There are several font styles that can be used such as **bold**, *italic*, ***bo
    ***This is bold & italic text***
 
 4. ~~Strikethrough~~  
-    Strikethrough is used to strikethrough a text. To strikethrough, add two tildes (~) at the beginning and end of the text
+    Strikethrough digunakan untuk mencoret suatu tulisan. Untuk melakukan strikethrough, tambahkan dua tilde (~) di awal dan akhir tulisan
    ```
    ~~This is strikethrough text~~
    ```
@@ -79,9 +79,9 @@ There are several font styles that can be used such as **bold**, *italic*, ***bo
 
 ---
 ## **3. Text Alignment**
-To make text aligned left, center, right and justify, you can use HTML formatting.  
+Untuk membuat teks menjadi rata kiri, tengah, kanan dan justify, dapat menggunakan format HTML.  
 1. Left Align   
-   To make the text left aligned, you can use
+   Untuk membuat teks menjadi rata kiri dapat menggunakan
    ```
    <p align="left">This text is aligned to the left.</p>
    ```
@@ -89,7 +89,7 @@ To make text aligned left, center, right and justify, you can use HTML formattin
     <p align="left">This text is aligned to the left.</p>
 
 2. Center Align  
-   To make text center-aligned you can use
+   Untuk membuat teks menjadi rata tengah dapat menggunakan
    ```
    <p align="center">This text is centered.</p>
    ```
@@ -97,7 +97,7 @@ To make text aligned left, center, right and justify, you can use HTML formattin
    <p align="center">This text is centered.</p>
 
 3. Right align  
-   To make text right-aligned you can use
+   Untuk membuat teks menjadi rata kanan dapat menggunakan
    ```
    <p align="right">This text is aligned to the right.</p>
    ```
@@ -105,12 +105,12 @@ To make text aligned left, center, right and justify, you can use HTML formattin
    <p align="right">This text is aligned to the right.</p>
 
 4. Justify  
-   To make text left-right aligned you can use
+   Untuk membuat teks menjadi rata kanan kiri dapat menggunakan
    ```
-   <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula.
+   <p align="justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula.
    ```
    Output:
-   <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula.</p>
+   <p align="justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula.</p>
 
 ---
 
@@ -148,7 +148,6 @@ Untuk membuat highlight dan mengganti warna teks dapat menggunakan format HTML.
       Output:  
       <span style="font-family:Times New Roman"> Font Tulisan dalam Times New Roman </span>
 ---
-
 ## **5. Lists**
 Berikut ini cara menggunakan numbered, bulleted, nested, to-do, dan mixed list.  
 1. Numbered List
