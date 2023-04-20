@@ -35,7 +35,7 @@ Pada VS Code, penggunaan tingkatan heading ini akan terlihat pada bagian outline
 <hr>
 
 ## **2. Font Style**
-Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, ***bold dan italic***, `inline code`, dan ~~strikethrough~~.
+Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, ***bold dan italic*** dan ~~strikethrough~~.
 
 1. **Bold**  
    Untuk membuat tulisan menjadi tebal, tambahkan dua asterisk (**) atau dua underscore(__) di awal dan akhir tulisan yang akan di-bold
@@ -69,15 +69,7 @@ Terdapat beberapa font style yang dapat digunakan seperti **bold**, *italic*, **
    Output:  
    ***This is bold & italic text***
 
-4. `Inline code`  
-   Inline code digunakan untuk menampilkan code dalam suatu kalimat. Untuk melakukan inline, tambahkan backtick (`) di awal dan akhir tulisan
-   ```
-   This is regular text `and this is inline code`
-   ```
-   Output:  
-   This is regular text `and this is inline code`
-
-5. ~~Strikethrough~~  
+4. ~~Strikethrough~~  
     Strikethrough digunakan untuk mencoret suatu tulisan. Untuk melakukan strikethrough, tambahkan dua tilde (~) di awal dan akhir tulisan
    ```
    ~~This is strikethrough text~~
@@ -115,10 +107,10 @@ Untuk membuat teks menjadi rata kiri, tengah, kanan dan justify, dapat menggunak
 4. Justify  
    Untuk membuat teks menjadi rata kanan kiri dapat menggunakan
    ```
-   <p align="justify">This text is justified. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula. Maecenas congue, magna sit amet suscipit tincidunt
+   <p align="justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula.
    ```
    Output:
-   <p align="justify">This text is justified. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula. Maecenas congue, magna sit amet suscipit tincidunt</p>
+   <p align="justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula.</p>
 
 ---
 
@@ -237,3 +229,97 @@ Berikut ini cara menggunakan numbered, bulleted, nested, to-do, dan mixed list.
       - [x] Completed task
       - [ ] Incomplete task
       - [ ] Another incomplete task   
+
+---
+## 6. Quote, Inline, Block Code
+1. Quote
+   Quote digunakan untuk mengutip kalimat atau code. Untuk melakukan quote, tambahkan simbol lebih dari ">" di awal teks
+   ```
+   > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula.
+   ```
+   Output:  
+   > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis ac tristique ultricies, quam sapien sagittis sapien, nec bibendum enim libero non diam. Nam elementum velit nec felis finibus vehicula.
+
+2. `Inline code`  
+   Inline code digunakan untuk menampilkan code dalam suatu kalimat. Untuk melakukan inline, tambahkan backtick (`) di awal dan akhir tulisan
+   ```
+   This is regular text `and this is inline code`
+   ```
+   Output:  
+   This is regular text `and this is inline code`
+
+3. Block Code  
+   Block code digunakan untuk menampilkan code tanpa mengeksekusinya. Gunakan tiga backtick (```) di line pertama dan terakhir code.
+   ```
+   ```                                                                      **This is bold text**                                                       ```
+   ```
+   Output:  
+   ```
+   **This is bold text**
+   ```
+---
+## 7. Horizontal Line
+Biasanya digunakan untuk pembatas antar section. Untuk menggunkannya dengan cara tiga dash "---" atau dengan `<hr>`.  
+
+---
+## 8. Link
+Untuk menuliskan link yang dapat diklik (hyperlink), lakukan
+```
+[Judul link](link)
+```
+Contoh:  
+```
+[youtube](https://www.youtube.com/)
+```
+Output:  
+[youtube](https://www.youtube.com/)
+
+---
+## 9. Insert Image
+Untuk menambahkan sebuah foto lakukan  
+```
+![alt text](image_file_path "title")
+```
+Here, alt text is the alternative text for the image, which is displayed if the image is not loaded or cannot be displayed. image_file_path is the file path or URL of the image. You can also provide an optional title for the image, which is displayed when the mouse pointer is over the image.
+`alt text` (alternative text) adalah teks yang akan muncul jika gambar tidak dapat ditampilkan. `image_file_path` adalah path atau URL dari foto. `"title"` adalah judul dari gambar yang akan muncul ketika kursor berada di gambar. Selain itu juga dapat dituliskan dalam format HTML
+```
+<p><img src="URL"/></p>
+```
+Contoh:  
+```
+<p align="center">
+  <img src="https://m.media-amazon.com/images/I/61X0g6GveJL._SL1500_.jpg" style="display: block; margin: auto;" width="200"/>
+</p>
+```
+Output:  
+<p align="center">
+  <img src="https://m.media-amazon.com/images/I/61X0g6GveJL._SL1500_.jpg" style="display: block; margin: auto;" width="200"/>
+</p>
+
+---
+## 10. Table
+Untuk membuat tabel, lakukan
+```
+|Header 1|Header 2|Header 3|
+|----|----|----|
+|A|B|C|
+|D|E|F|
+|G|H|I|
+```
+Output:  
+
+|Header 1|Header 2|Header 3|
+|----|----|----|
+|A|B|C|
+|D|E|F|
+|G|H|I|
+
+---
+## 11. Equation
+Untuk membuat suatu persamaan dapat dituliskan dalam format Latex. Contohnya
+```
+$i\hbar\frac{\partial}{\partial t}\psi(r,t)=\left [ \frac{-\hbar^2}{2m}\nabla^2+V(r,t) \right ]\psi(r,t)$
+```
+Output:  
+
+$i\hbar\frac{\partial}{\partial t}\psi(r,t)=\left [ \frac{-\hbar^2}{2m}\nabla^2+V(r,t) \right ]\psi(r,t)$
